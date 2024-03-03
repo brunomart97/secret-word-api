@@ -6,15 +6,15 @@ import type { GetLevelDataBody } from '../../typings/Level'
 
 export const getLevelData = async (req: Request, res: Response) => {
   try {
-    const { language, level }: GetLevelDataBody = req.body
+    const { language, levelNumber }: GetLevelDataBody = req.body
 
     // mandatory data validations
     if (!language) {
       return res.status(400).json({ error: 'language is required' })
     }
 
-    if (!level) {
-      return res.status(400).json({ error: 'level is required' })
+    if (!levelNumber) {
+      return res.status(400).json({ error: 'levelNumber is required' })
     }
 
     // checking if the parameters are valid
@@ -25,14 +25,14 @@ export const getLevelData = async (req: Request, res: Response) => {
       })
     }
 
-    if (typeof level !== 'number') {
+    if (typeof levelNumber !== 'number') {
       return res.status(400).json({
-        error: 'type of level is number'
+        error: 'type of levelNumber is number'
       })
     }
 
     // selecting and returning level
-    const selectedLevel = selectLevel(level)
+    const selectedLevel = selectLevel(levelNumber)
     const formatedLevel = formatLevelData(selectedLevel, language)
 
     return res.status(200).json(formatedLevel)
