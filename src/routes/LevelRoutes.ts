@@ -3,6 +3,6 @@ import { LevelController } from '../controllers/LevelController'
 
 const router = Router()
 
-router.post('/getLevel', LevelController.getLevel)
+router.post('/getLevelData', LevelController.getLevelData)
 
 export default router
