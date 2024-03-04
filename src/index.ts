@@ -1,10 +1,12 @@
 import express from 'express'
+import cors from 'cors'
 
 import LevelRoutes from './routes/LevelRoutes'
 
 const PORT = process.env.PORT || 3333
 const app = express()
 
+app.use(cors())
 app.use(express.json())
 
 // routes

@@ -1,11 +1,11 @@
 import type { Language, LevelNumber, Level } from './SecretWord'
 
-export interface GetLevelDataBody {
+export type GetLevelDataBody = {
   language: Language
   levelNumber: LevelNumber
 }
 
-export interface GetLevelKeyBody {
+export type GetLevelKeyBody = {
   language: Language
   levelId: Level['id']
   userResponse: string
