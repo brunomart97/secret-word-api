@@ -1,6 +1,6 @@
-import { Request, Response } from 'express'
 import { languageList } from '../../constant'
 import { checkKey } from '../../helpers/checkKey'
+import type { Request, Response } from 'express'
 import type { GetLevelKeyBody } from '../../typings/Level'
 
 export const getLevelKey = async (req: Request, res: Response) => {

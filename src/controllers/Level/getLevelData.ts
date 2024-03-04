@@ -1,7 +1,7 @@
-import { Request, Response } from 'express'
 import { languageList } from '../../constant'
 import { selectLevel } from '../../helpers/selectLevel'
 import { formatLevelData } from '../../helpers/formatLevelData'
+import type { Request, Response } from 'express'
 import type { GetLevelDataBody } from '../../typings/Level'
 
 export const getLevelData = async (req: Request, res: Response) => {

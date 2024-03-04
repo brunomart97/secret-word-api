@@ -1,7 +1,10 @@
 import express from 'express'
 import cors from 'cors'
+import env from 'dotenv'
 
 import LevelRoutes from './routes/LevelRoutes'
+
+env.config()
 
 const PORT = process.env.PORT || 3333
 const app = express()
