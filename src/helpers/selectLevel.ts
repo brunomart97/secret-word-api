@@ -1,6 +1,6 @@
 import { levelDictionary } from './levelDictionary'
 import { generateRandomNumber } from '../utils/generateRandomNumber'
-import type { LevelNumber } from '../typings/SecretWord'
+import type { LevelNumber } from '../typings/Zignix'
 
 export const selectLevel = (levelNumber: LevelNumber) => {
   const selectedLevel = levelDictionary[levelNumber]

@@ -1,4 +1,4 @@
-import type { Language, LevelNumber, Level } from './SecretWord'
+import type { Language, LevelNumber, Level } from './Zignix'
 
 export type GetLevelDataBody = {
   language: Language

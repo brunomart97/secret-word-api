@@ -1,5 +1,5 @@
 import { encryptKey } from '../utils/encryptKey'
-import type { Language, Level } from '../typings/SecretWord'
+import type { Language, Level } from '../typings/Zignix'
 
 export const formatLevelData = (level: Level, language: Language) => {
   return {

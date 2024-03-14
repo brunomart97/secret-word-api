@@ -1,4 +1,4 @@
-# Secret Word API
+# Zignix API
 
 ## Deploy
 

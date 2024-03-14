@@ -1,5 +1,5 @@
 import { levelDictionary } from './levelDictionary'
-import type { Language, Level } from '../typings/SecretWord'
+import type { Language, Level } from '../typings/Zignix'
 
 export const checkKey = (
   language: Language,

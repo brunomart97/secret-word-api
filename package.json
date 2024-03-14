@@ -1,8 +1,8 @@
 {
-  "name": "secret-word-api",
+  "name": "zignix-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/zonixlab/secret-word-api.git",
+  "repository": "https://github.com/zonixlab/zignix-api.git",
   "author": "Bruno Martins <brunomart97@hotmail.com>",
   "license": "MIT",
   "scripts": {
