@@ -14,7 +14,15 @@ export const checkKey = (
   }
 
   const userLevelKey = userLevel.levelData[language].key
-  const keyWasDiscovered = userLevelKey === userResponse
+  const keyWasDiscovered =
+    userLevelKey
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase() ===
+    userResponse
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
 
   return {
     keyWasDiscovered,
