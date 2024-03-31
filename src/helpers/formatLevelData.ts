@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken'
 import { encryptKey } from '../utils/encryptKey'
+import { levelDictionary } from './levelDictionary'
 import type { Language, Level } from '../typings/Zignix'
 
 export const formatLevelData = (level: Level, language: Language) => {
@@ -13,6 +14,7 @@ export const formatLevelData = (level: Level, language: Language) => {
         },
         'zignix'
       )
-    })
+    }),
+    lastLevel: Object.keys(levelDictionary).length
   }
 }
