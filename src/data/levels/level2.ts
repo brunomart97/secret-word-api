@@ -631,7 +631,8 @@ export const level2 = [
           'Lanterna',
           'Óculos',
           'Aquário',
-          'Para-brisa'
+          'Para-brisa',
+          'Reflexo'
         ]
       },
       en: {
@@ -651,7 +652,8 @@ export const level2 = [
           'Lantern',
           'Glasses',
           'Aquarium',
-          'Windshield'
+          'Windshield',
+          'Reflection'
         ]
       },
       es: {
@@ -671,7 +673,8 @@ export const level2 = [
           'Linterna',
           'Gafas',
           'Acuario',
-          'Parabrisas'
+          'Parabrisas',
+          'Reflejo'
         ]
       }
     }
