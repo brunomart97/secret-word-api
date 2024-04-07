@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Route] - Level 7 secret words;
+- [Data] - Level 7 secret words;
 
 ### Fixed
 
